@@ -1,0 +1,122 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Agent Management</title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Agent Management</h1>-->
+
+<!--    <h2>Update Slot Timings</h2>-->
+<!--    <label for="agentName">Agent Name:</label>-->
+<!--    <input type="text" id="agentName">-->
+<!--    <label for="slotTimings">Slot Timings:</label>-->
+<!--    <input type="text" id="slotTimings">-->
+<!--    <button onclick="updateSlotTimings()">Update</button>-->
+
+<!--    <h2>Mark Agent as Unavailable</h2>-->
+<!--    <label for="agentNameUnavailable">Agent Name:</label>-->
+<!--    <input type="text" id="agentNameUnavailable">-->
+<!--    <button onclick="markAgentUnavailable()">Mark as Unavailable</button>-->
+
+<!--    <h2>Agents</h2>-->
+<!--    <div id="agentsList"></div>-->
+
+<!--    <script src="scripts.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Agent Management</h1>
+
+    <h2>Update Slot Timings</h2>
+    <label for="agentName">Agent Name:</label>
+    <input type="text" id="agentName" list="agentNames">
+    <datalist id="agentNames">
+        <!-- Options will be dynamically populated here -->
+    </datalist>
+
+    <label for="slotTimings">Slot Timings:</label>
+    <select id="slotTimings">
+        <option value="9:00 AM - 5:00 PM">9am - 5pm</option>
+        <option value="10: 00 AM - 6:00 PM">10am - 6pm</option>
+        <option value="11:00 AM - 7:00 PM">11am - 7pm</option>
+        <!-- Add more options as needed -->
+    </select>
+    <button onclick="updateSlotTimings()">Update</button>
+
+
+    <h2>Agent Availability </h2>
+    <label for="agentNameAvailability">Agent Name:</label>
+    <input type="text" id="agentNameAvailability" list="agentNamesAvailability">
+    <datalist id="agentNamesAvailability">
+        <!-- Options will be dynamically populated here -->
+    </datalist>
+    <button onclick="markAgentAvailable()">Mark as Available</button>
+    <button onclick="markAgentUnavailable()">Mark as Unavailable</button>
+
+<!--    <h2>Agents</h2>-->
+<!--    <div id="agentsList"></div>-->
+
+    <h2>Agents Details</h2>
+    <div id="agentsTable"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Agent Management</title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Agent Management</h1>-->
+
+<!--    <h2>Update Slot Timings</h2>-->
+<!--    <label for="agentName">Agent Name:</label>-->
+<!--    <input type="text" id="agentName" list="agentNames">-->
+<!--    <datalist id="agentNames">-->
+<!--        &lt;!&ndash; Options will be dynamically populated here &ndash;&gt;-->
+<!--    </datalist>-->
+
+<!--    <label for="slotTimings">Slot Timings:</label>-->
+<!--    <select id="slotTimings">-->
+<!--        <option value="9:00 AM - 5:00 PM">9am - 5pm</option>-->
+<!--        <option value="10:00 AM - 6:00 PM">10am - 6pm</option>-->
+<!--        <option value="11:00 AM - 7:00 PM">11am - 7pm</option>-->
+<!--        &lt;!&ndash; Add more options as needed &ndash;&gt;-->
+<!--    </select>-->
+<!--    <button onclick="updateSlotTimings()">Update</button>-->
+
+
+<!--    <h2>Agent Availability </h2>-->
+<!--    <label for="agentNameAvailability">Agent Name:</label>-->
+<!--    <input type="text" id="agentNameAvailability" list="agentNamesAvailability">-->
+<!--    <datalist id="agentNamesAvailability">-->
+<!--        &lt;!&ndash; Options will be dynamically populated here &ndash;&gt;-->
+<!--    </datalist>-->
+<!--    <button onclick="markAgentAvailable()">Mark as Available</button>-->
+<!--    <button onclick="markAgentUnavailable()">Mark as Unavailable</button>-->
+
+<!--    <h2>Agents Details</h2>-->
+<!--    <div id="agentsTable"></div>-->
+
+<!--    <script src="scripts.js"></script>-->
+<!--</body>-->
+<!--</html>-->
